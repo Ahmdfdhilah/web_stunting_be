@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  web:
+    build: .
+    container_name: pyramid_web
+    command: pserve development.ini
+    volumes:
+      - .:/app
+    ports:
+      - "6543:6543"
