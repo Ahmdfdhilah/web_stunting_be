@@ -12,16 +12,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Set working directory
 WORKDIR /app
 
-# Copy requirements file
+# Copy requirements file dan instal dependencies
 COPY requirements.txt .
-
-# Install dependencies dari requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
-
-RUN pip install -e .
 
 # Copy semua file dari proyek ke container
 COPY . .
+
+# Instal proyek lokal
+RUN pip install -e .
 
 # Expose port yang digunakan aplikasi
 EXPOSE 6543
