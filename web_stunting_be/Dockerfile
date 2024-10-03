@@ -18,6 +18,8 @@ COPY requirements.txt .
 # Install dependencies dari requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+RUN pip install -e .
+
 # Copy semua file dari proyek ke container
 COPY . .
 
