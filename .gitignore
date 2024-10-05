@@ -1,0 +1,33 @@
+# Ignoring compiled files and temporary files
+*.egg
+*.egg-info
+*.pyc
+*$py.class
+*~
+.coverage
+coverage.xml
+*.sqlite
+*.sublime-project
+*.sublime-workspace
+.*.sw?
+.sw?
+.DS_Store
+
+# Ignoring build and distribution directories
+build/
+dist/
+
+# Ignoring virtual environment directories
+env*/
+.tox/
+tmp/
+
+# Ignoring test and coverage files
+nosetests.xml
+coverage
+test
+
+# Ignoring project-specific config files
+web_stunting_be/development.ini
+web_stunting_be/Dockerfile
+web_stunting_be/docker-compose.yml
