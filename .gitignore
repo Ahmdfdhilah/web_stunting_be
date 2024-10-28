@@ -28,6 +28,4 @@ coverage
 test
 
 # Ignoring project-specific config files
-web_stunting_be/development.ini
-web_stunting_be/Dockerfile
-web_stunting_be/docker-compose.yml
+
