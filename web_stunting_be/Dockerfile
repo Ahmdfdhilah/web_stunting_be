@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app
 
 # Copy requirements file dan instal dependencies
-COPY requirements.txt .
+COPY web_stunting_be/requirements.txt .
+
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy semua file dari proyek ke container
