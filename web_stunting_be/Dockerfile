@@ -17,8 +17,8 @@ COPY web_stunting_be/requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy semua file dari proyek ke container
-COPY . .
+
+COPY ./web_stunting_be /app/web_stunting_be
 
 # Instal proyek lokal
 RUN pip install -e .
