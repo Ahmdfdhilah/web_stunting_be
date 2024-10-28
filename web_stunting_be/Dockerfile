@@ -10,10 +10,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpq-dev
 
 # Set working directory
-WORKDIR /app
+WORKDIR /app/web_stunting_be
 
 # Copy requirements file dan instal dependencies
-COPY web_stunting_be/requirements.txt .
+COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
