@@ -1,0 +1,5 @@
+[console_scripts]
+initialize_web_stunting_be_db = web_stunting_be.scripts.initialize_db:main
+
+[paste.app_factory]
+main = web_stunting_be:main
